@@ -1,0 +1,83 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#display {
+  font-size: 45px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Individual button colors */
+#startBtn {
+  background: #28a745;
+  color: white;
+}
+
+#pauseBtn {
+  background: #ffc107;
+  color: black;
+}
+
+#resetBtn {
+  background: #dc3545;
+  color: white;
+}
+
+#lapBtn {
+  background: #17a2b8;
+  color: white;
+}
+
+/* Hover effect */
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Lap list */
+#laps {
+  margin-top: 20px;
+  text-align: left;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#laps li {
+  background: rgba(255,255,255,0.2);
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
